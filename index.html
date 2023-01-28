@@ -34,7 +34,7 @@
     </style>
     <style>
         body {
-        background: white
+        background: white;
         color: rgb(0, 0, 0);
       }
     </style>
@@ -47,6 +47,7 @@
       .rainbow-animated {
   background: linear-gradient(to right, blue, violet, rgb(65, 1, 61));
   background-size: 400% 400%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: rainbow 20s ease infinite;
@@ -67,6 +68,11 @@
 }
 
      </style>
+       <style>
+        .round {
+         border-radius: 50%;
+        }
+       </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -108,54 +114,44 @@
                 ><h4>Видео по установке С#</h4></a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://vk.com/csharpblog7"
+                ><h4>Наш паблик в ВК</h4></a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <div class="container text-center my-2">
-          <div class="mx-auto">
-          <div class="rainbow-animated text-center fw-light"> <font size="9"> Hello, world!</font></div>
-          <p class="">
-            <font size="6"
-              >Вы находитесь на главной странице сайта, посвященного проекту по
-              Системному программированию. Наша команда состоит из 4 человек: <b>Лахов Александр</b>(WEB-историк, делает Ленту времени,
-             Web-альбом), <b>Норман Геннадий</b>(Гис-специалист,
-              делает аудиогид и мультимедийную презентацию),
-              <b>Мецкарь Кирилл</b>(Сервисный инженер, делает
-              видеогайд по установке и запуску C#, так же в его задачи входит
-              выступление и демонстрация результатов прохождения квеста),
-              <b>Сизов Тимофей</b>(IT-администратор, ведет блог в
-              группе ВК, создает сайт). Мы приложили все усилия, чтобы вас
-              заинтересовать! Приятного просмотра.
-              <br/>
-              <strong>
-                P.s: отдельная благодарнасть нашим преданным партнерам, которые
-                сопровождали нас на протяжении всего рабочего процесса!</strong
-              >
-              </p>
-              <p>
+      <div class="mx-auto">
+      <div class="rainbow-animated fw-light"> <font size="9"> Hello, world!</font></div>
+      <p align="left" >
+        <font size="6">
+        Вы находитесь на главной странице сайта, посвященного проекту по Системному программированию. Наша команда состоит из 4 человек: <br/>
+        <b>Лахов Александр</b> WEB-историк, делает Ленту времени, Web-альбом <br/>
+        <b>Норман Геннадий</b> Гис-специалист,делает аудиогид и мультимедийную презентацию <br/>
+        <b>Мецкарь Кирилл</b> Сервисный инженер, делает видеогайд по C# и демонстрацию результатов прохождения квеста <br/>
+        <b>Сизов Тимофей</b> IT-администратор, ведет блог в группе ВК, создает сайт). <br/>
+        Мы приложили все усилия, чтобы вас заинтересовать! Приятного просмотра. <br/>
+        <br/>
+        <strong>
+        P.s: отдельная благодарнасть нашим преданным партнерам, которые
+        сопровождали нас на протяжении всего рабочего процесса!
+        </strong>
+          </p>
+          <p>
                 <img
                   src="Team.jpg"
-                  width="550"
-                  height="690"
+                  width="300"
+                  height="300"
                   alt="bububu"
-                  class="fig"
+                  class="round"
                 />
               </p>
             </font>
-          </div>
-          </div>
-
-       
-          <br />
-          <br />
-
-          <a href="https://vk.com/csharpblog7" target="blank">
-            <button class="btn btn-primary">Наш паблик в ВК</button>
-          </a>
         </div>
       </div>
-    </div>
   </body>
 </html>
