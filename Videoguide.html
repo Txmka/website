@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VideoGuide</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
+    <link rel="manifest" href="icon.png" />
+    <style>
+      a {
+        color: rgb(255, 255, 255);
+      }
+      a:visited {
+        color: rgb(206, 47, 206);
+      }
+      a:hover {
+        color: rgb(206, 47, 206);
+      }
+    </style>
+    <style>
+      body {
+        background: linear-gradient(to right, #ffbaff, rgb(255, 230, 255));
+        color: rgb(0, 0, 0);
+      }
+    </style>
+    <style>
+      #line_block {
+        width: 480px;
+        height: 270px;
+        background: rgb(33, 36, 41);
+        float: left;
+        margin: 0px 120px 80px 270px;
+        text-align: center;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand p-0" href="mainp.html"
+          ><img src="csharplogo.png" alt="logotype" width="140"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Lentavremeni.html"
+                ><h4>Лента времени</h4></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Webalbum.html"><h4>Web-альбом</h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Audioguide.html"><h4>Аудиогид</h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Presentation.html">
+                <h4>Презентация</h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="Videoguide.html"
+                ><h4>Видео по установке С#</h4></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <h1 class="text-center">Видеогид по работе с C#</h1>
+    <h3 class="text-center">Приятного просмотра</h3>
+    <br />
+    <div class="container text-center my-2">
+      <video
+        width="100%"
+        height="100%"
+        controls="controls"
+        src="Kirillerx.mp4"
+      ></video>
+    </div>
+    <br />
+    <div class="text-center">
+      <a href="https://vk.com/csharpblog7" target="blank">
+        <button class="btn btn-primary center">Наш паблик в ВК</button>
+      </a>
+    </div>
+    <br />
+  </body>
+</html>
