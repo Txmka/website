@@ -45,14 +45,38 @@
     </style>
     <style>
         body {
-        background: linear-gradient(to right, rgb(35, 0, 56), rgb(153, 0, 240));
-        color: rgb(255, 255, 255);
+        background: white
+        color: rgb(0, 0, 0);
       }
     </style>
      <style>
       .colortext {
         color:pink; /* Красный цвет выделения */
       }
+     </style>
+     <style>
+      .rainbow-animated {
+  background: linear-gradient(to right, blue, violet, rgb(65, 1, 61));
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: rainbow 20s ease infinite;
+  animation: rainbow 20s ease infinite;
+  font-weight:500
+}
+ 
+@-webkit-keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+ 
+@keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
      </style>
   </head>
   <body>
@@ -100,41 +124,40 @@
       </div>
     </nav>
 
-    <div class="container text-center my-5">
-  
-          <p>
-            <img
-              src="Team.jpg"
-              width="400"
-              height="550"
-              alt="Teamka"
-              class="fig"
-            />
-          </p>
+    <div class="container text-center my-2">
           <div class="mx-auto">
-          <h1><font color="pink" face="arial">Hello, world! </font></h1>
-          <h1>
-            <font size="5" color="white"
+          <div class="rainbow-animated text-center"> <font size="9"> Hello, world!</font></div>
+          <div class="fw-light">
+            <font size="7"
               >Вы находитесь на главной странице сайта, посвященного проекту по
               Системному программированию. Наша команда состоит из 4 человек:
-              <span class="colortext">Лахов Александр</span>(WEB-историк, делает Ленту времени
-              и Web-альбом),  <span class="colortext">Норман Геннадий</span>(Гис-специалист,
+              <span class="rainbow-animated">Лахов Александр</span>(WEB-историк, делает Ленту времени,
+             Web-альбом),  <span class="rainbow-animated">Норман Геннадий</span>(Гис-специалист,
               делает аудиогид и мультимедийную презентацию),
-              <span class="colortext">Мецкарь Кирилл</span>(Сервисный инженер, делает
+              <span class="rainbow-animated">Мецкарь Кирилл</span>(Сервисный инженер, делает
               видеогайд по установке и запуску C#, так же в его задачи входит
               выступление и демонстрация результатов прохождения квеста),
-              <span class="colortext">Сизов Тимофей</span>(IT-администратор, ведет блог в
+              <span class="rainbow-animated">Сизов Тимофей</span>(IT-администратор, ведет блог в
               группе ВК, создает сайт). Мы приложили все усилия, чтобы вас
               заинтересовать! Приятного просмотра.
+              <br/>
               <strong>
                 P.s: отдельная благодарнасть нашим преданным партнерам, которые
                 сопровождали нас на протяжении всего рабочего процесса!</strong
               >
+              <p>
+                <img
+                  src="Team.jpg"
+                  width="550"
+                  height="690"
+                  alt="bububu"
+                  class="fig"
+                />
+              </p>
             </font>
-          </h1>
+          </div>
 
-          <a href="https://vk.com/fundays_j">Колосова Екатерина </a>,
-          <a href="https://vk.com/tevtelbka">Николаева Адель</a>
+       
           <br />
           <br />
 
