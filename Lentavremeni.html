@@ -20,24 +20,44 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
     <link rel="manifest" href="icon.png" />
     <style>
-      a {
-        color: rgb(255, 255, 255);
-      }
-      a:visited {
-        color: rgb(206, 47, 206);
-      }
-      a:hover {
-        color: rgb(206, 47, 206);
-      }
+      body {
+        background: white;
+        color: rgb(0, 0, 0);
+      }rgb(0, 0, 0)
     </style>
     <style>
-      body {
-        background: linear-gradient(
-          to right,
-          rgb(153, 0, 240),
-          rgb(197, 97, 255)
-        );
-        color: rgb(255, 255, 255);
+      .rainbow-animated {
+        background: linear-gradient(to right, blue, violet, rgb(65, 1, 61));
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: rainbow 20s ease infinite;
+        animation: rainbow 20s ease infinite;
+        font-weight: 500;
+      }
+
+      @-webkit-keyframes rainbow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @keyframes rainbow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
       }
     </style>
   </head>
@@ -93,7 +113,9 @@
       <div class="row">
         <div class="mx-auto">
           <br />
-          <h1 class="fw-light">Лента времени развития языка С#</h1>
+          <h1 class="fw-light rainbow-animated">
+            Лента времени развития языка С#
+          </h1>
           <p class="lead fw-light">Приятного просмотра</p>
           <iframe
             src="https://onedrive.live.com/embed?cid=FF9A993A65938ACF&amp;resid=ff9a993a65938acf%213762&amp;authkey=AP_yh4xzxFjx_SQ&amp;em=2&amp;wdAr=1.3333333333333333"

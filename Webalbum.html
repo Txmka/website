@@ -20,24 +20,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
     <link rel="manifest" href="icon.png" />
     <style>
-      a {
-        color: rgb(255, 255, 255);
-      }
-      a:visited {
-        color: rgb(206, 47, 206);
-      }
-      a:hover {
-        color: rgb(206, 47, 206);
-      }
-    </style>
-    <style>
       body {
-        background: linear-gradient(
-          to right,
-          rgb(197, 97, 255),
-          rgb(202, 110, 255)
-        );
-        color: rgb(255, 255, 255);
+        background: white;
+        color: rgb(0, 0, 0);
       }
     </style>
     <style>
@@ -66,7 +51,7 @@
         height: 100%;
         text-align: center;
         backface-visibility: hidden;
-        background-color: orange;
+        background-color: rgb(14, 13, 12);
         transform: rotateY(-180deg);
         transition: transform 0.3s cubic-bezier(0.2, 0.85, 0.4, 1.275);
       }
@@ -93,6 +78,41 @@
     <style>
       .center {
         text-align: center;
+      }
+    </style>
+    <style>
+      .rainbow-animated {
+        background: linear-gradient(to right, blue, violet, rgb(65, 1, 61));
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: rainbow 20s ease infinite;
+        animation: rainbow 20s ease infinite;
+        font-weight: 500;
+      }
+
+      @-webkit-keyframes rainbow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @keyframes rainbow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
       }
     </style>
   </head>
@@ -147,7 +167,7 @@
     </nav>
 
     <br />
-    <h1 class="fw-light center">Плюсы и минусы языка C#</h1>
+    <h1 class="center rainbow-animated fw-light">Плюсы и минусы языка C#</h1>
     <div class="center">
       <div id="line_block" class="card">
         <div class="card__front">

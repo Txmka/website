@@ -20,24 +20,44 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
     <link rel="manifest" href="icon.png" />
     <style>
-      a {
-        color: rgb(255, 255, 255);
-      }
-      a:visited {
-        color: rgb(206, 47, 206);
-      }
-      a:hover {
-        color: rgb(206, 47, 206);
+      body {
+        background: white;
+        color: rgb(0, 0, 0);
       }
     </style>
     <style>
-      body {
-        background: linear-gradient(
-          to right,
-          rgb(202, 110, 255),
-          rgb(214, 143, 255)
-        );
-        color: rgb(0, 0, 0);
+      .rainbow-animated {
+        background: linear-gradient(to right, blue, violet, rgb(65, 1, 61));
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: rainbow 20s ease infinite;
+        animation: rainbow 20s ease infinite;
+        font-weight: 500;
+      }
+
+      @-webkit-keyframes rainbow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @keyframes rainbow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
       }
     </style>
   </head>
@@ -95,7 +115,9 @@
       <div class="row">
         <div class="mx-auto">
           <br />
-          <h1 class="">Страны и предприятия, использующие C#</h1>
+          <h1 class="fw-light rainbow-animated">
+            Страны и предприятия, использующие C#
+          </h1>
           <br />
           <iframe
             src="https://onedrive.live.com/embed?cid=FF9A993A65938ACF&amp;resid=FF9A993A65938ACF%213765&amp;authkey=AE0pPfBcs04nSUE&amp;em=2&amp;wdAr=1.3333333333333333"
@@ -123,7 +145,6 @@
             <button class="btn btn-primary">Наш паблик в ВК</button>
           </a>
           <br />
-          <h1 class=""> </h1>
         </div>
       </div>
     </div>
