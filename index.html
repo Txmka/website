@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="margin-right: calc(-1 * (100vw - 100%));">
   <head>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -14,25 +14,13 @@
     ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CcharpMain</title>
+    <title>CsharpMain</title>
     <link rel="apple-touch-icon" sizes="180x180" href="icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="icon.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
     <link rel="manifest" href="icon.png" />
     <style>
-      a {
-        color: rgb(242, 0, 161);
-      }
-      a:visited {
-        color: rgb(232, 0, 232);
-      }
-      a:hover {
-        color: rgb(238, 0, 238);
-      }
-    </style>
-    <style>
       .rounded-img {
-        width: 60%;
         border-radius: 50%;
       }
     </style>
@@ -45,8 +33,8 @@
     </style>
     <style>
         body {
-        background: linear-gradient(to right, rgb(35, 0, 56), rgb(153, 0, 240));
-        color: rgb(255, 255, 255);
+        background: white;
+        color: rgb(0, 0, 0);
       }
     </style>
      <style>
@@ -54,13 +42,40 @@
         color:pink; /* Красный цвет выделения */
       }
      </style>
+     <style>
+      .rainbow-animated {
+  background: linear-gradient(to right, blue, violet, rgb(65, 1, 61));
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: rainbow 20s ease infinite;
+  animation: rainbow 20s ease infinite;
+  font-weight:500
+}
+ 
+@-webkit-keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+ 
+@keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+ <style>
+   .layer {
+    overflow: scroll;
+   } 
+  </style>
+  
   </head>
-  <body>
+  <body style="">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand p-0" aria-current="page" href="index.html"
-          ><img src="logoactive.png" alt="logotype" width="140"
-        /></a>
+      <div class="container-xxl" >
         <button
           class="navbar-toggler"
           type="button"
@@ -68,16 +83,16 @@
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+          aria-label="Toggle navigation">
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+		<a class="navbar-brand p-0" aria-current="page" href="index.html">
+			  <img src="logoactive.png" alt="logotype" width="140" style="margin: 0px 0px 0px 45px; float: right;"/>
+			  </a>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="Lentavremeni.html"
-                ><h4>Лента времени</h4></a
-              >
+              <a class="nav-link" href="Lentavremeni.html">
+			    <h4>Лента времени</h4>
+			  </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Webalbum.html"><h4>Web-альбом</h4></a>
@@ -95,54 +110,48 @@
                 ><h4>Видео по установке С#</h4></a
               >
             </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container text-center my-5">
-  
-          <p>
-            <img
-              src="Team.jpg"
-              width="400"
-              height="550"
-              alt="Teamka"
-              class="fig"
-            />
-          </p>
-          <div class="mx-auto">
-          <h1><font color="pink" face="arial">Hello, world! </font></h1>
-          <h1>
-            <font size="5" color="white"
-              >Вы находитесь на главной странице сайта, посвященного проекту по
-              Системному программированию. Наша команда состоит из 4 человек:
-              <span class="colortext">Лахов Александр</span>(WEB-историк, делает Ленту времени
-              и Web-альбом),  <span class="colortext">Норман Геннадий</span>(Гис-специалист,
-              делает аудиогид и мультимедийную презентацию),
-              <span class="colortext">Мецкарь Кирилл</span>(Сервисный инженер, делает
-              видеогайд по установке и запуску C#, так же в его задачи входит
-              выступление и демонстрация результатов прохождения квеста),
-              <span class="colortext">Сизов Тимофей</span>(IT-администратор, ведет блог в
-              группе ВК, создает сайт). Мы приложили все усилия, чтобы вас
-              заинтересовать! Приятного просмотра.
-              <strong>
-                P.s: отдельная благодарнасть нашим преданным партнерам, которые
-                сопровождали нас на протяжении всего рабочего процесса!</strong
+            <li class="nav-item">
+              <a class="nav-link" href="https://vk.com/csharpblog7"
+                ><h4>Наш паблик в ВК</h4></a
               >
+            </li>
+          </ul>
+      </div>
+	<a> 
+	  <img src="qr.png" height=100 width=100 style="margin: 0px 20px 0px 0px; float: left;"
+		onmouseover = "height=660; width=660;"
+		onmouseout = "height=100; width=100;"/>
+	</a>
+    </nav>
+	
+    <div class="container text-center my-2">
+      <div class="mx-auto">
+      <div class="rainbow-animated fw-light"> <font size="9"> Hello, world!</font></div>
+      <p align="left" >
+        <font size="6">
+        Вы находитесь на главной странице сайта, посвященного проекту по Системному программированию. Наша команда состоит из 4 человек: <br/>
+        <b>Лахов Александр</b> WEB-историк, делает Ленту времени, Web-альбом. <br/>
+        <b>Норман Геннадий</b> Гис-специалист, делает аудиогид и мультимедийную презентацию. <br/>
+        <b>Мецкарь Кирилл</b> Сервисный инженер, делает видеогайд по C# и демонстрацию результатов прохождения квеста. <br/>
+        <b>Сизов Тимофей</b> IT-администратор, ведет блог в группе ВК, создает сайт. <br/>
+        Мы приложили все усилия, чтобы вас заинтересовать! Приятного просмотра. <br/>
+        <br/>
+        <strong>
+        P.s: отдельная благодарнасть нашим преданным партнерам, которые
+        сопровождали нас на протяжении всего рабочего процесса!
+        </strong>
+          </p>
+          <p>
+                <img 
+				  class="rounded-img"
+                  src="Team.jpg"
+                  width="300"
+                  height="300"
+                  alt="bububu"
+                />
+              </p>
             </font>
-          </h1>
-
-          <a href="https://vk.com/fundays_j">Колосова Екатерина </a>,
-          <a href="https://vk.com/tevtelbka">Николаева Адель</a>
-          <br />
-          <br />
-
-          <a href="https://vk.com/csharpblog7" target="blank">
-            <button class="btn btn-primary">Наш паблик в ВК</button>
-          </a>
         </div>
       </div>
-    </div>
   </body>
 </html>

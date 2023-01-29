@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="margin-right: calc(-1 * (100vw - 100%));">
   <head>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -19,72 +19,41 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icon.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
     <link rel="manifest" href="icon.png" />
-    <style>
-      a {
-        color: rgb(255, 255, 255);
-      }
-      a:visited {
-        color: rgb(206, 47, 206);
-      }
-      a:hover {
-        color: rgb(206, 47, 206);
-      }
-    </style>
        <style>
       body {
-        background: linear-gradient(
-          to right,
-          rgb(214, 143, 255),
-          #ffbaff
-        );
+        background: white;
         color: rgb(0, 0, 0);
       }
     </style>
-
     <style>
-      .card {
-        position: relative;
-        width: 300px;
-        height: 300px;
-        color: white;
-      }
-      .card__front {
-        z-index: 1;
-        position: relative;
-        background-color: rgb(255, 68, 0);
-        height: 100%;
-        text-align: center;
-        backface-visibility: hidden;
-        transition: transform 0.3s cubic-bezier(0.2, 0.85, 0.4, 1.275);
-      }
-      .card__back {
-        z-index: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        backface-visibility: hidden;
-        background-color: rgb(255, 0, 0);
-        transform: rotateY(-180deg);
-        transition: transform 0.3s cubic-bezier(0.2, 0.85, 0.4, 1.275);
-      }
-      .card:hover .card__back {
-        transform: rotateY(0deg);
-        z-index: 2;
-      }
-      .card:hover .card__front {
-        transform: rotateY(180deg);
-        z-index: -1;
-      }
-    </style>
+      .rainbow-animated {
+  background: linear-gradient(to right, blue, violet, rgb(65, 1, 61));
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: rainbow 20s ease infinite;
+  animation: rainbow 20s ease infinite;
+  font-weight:500
+}
+ 
+@-webkit-keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+ 
+@keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand p-0" href="index.html"
-          ><img src="csharplogo.png" alt="logotype" width="140"
-        /></a>
+      <div class="container-xxl" >
         <button
           class="navbar-toggler"
           type="button"
@@ -92,16 +61,16 @@
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+          aria-label="Toggle navigation">
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+		<a class="navbar-brand p-0" aria-current="page" href="index.html">
+			  <img src="csharplogo.png" alt="logotype" width="140" style="margin: 0px 0px 0px 45px; float: right;"/>
+			  </a>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="Lentavremeni.html"
-                ><h4>Лента времени</h4></a
-              >
+              <a class="nav-link" href="Lentavremeni.html">
+			    <h4>Лента времени</h4>
+			  </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Webalbum.html"><h4>Web-альбом</h4></a>
@@ -110,11 +79,7 @@
               <a class="nav-link" href="Audioguide.html"><h4>Аудиогид</h4></a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="Presentation.html"
-              >
+              <a class="nav-link" href="Presentation.html">
                 <h4>Презентация</h4>
               </a>
             </li>
@@ -123,29 +88,31 @@
                 ><h4>Видео по установке С#</h4></a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://vk.com/csharpblog7"
+                ><h4>Наш паблик в ВК</h4></a
+              >
+            </li>
           </ul>
-        </div>
       </div>
+	<a> 
+	  <img src="qr.png" height=100 width=100 style="margin: 0px 20px 0px 0px; float: left;"
+		onmouseover = "height=660; width=660;"
+		onmouseout = "height=100; width=100;"/>
+	</a>
     </nav>
 
     <div class="container text-center my-2">
       <div class="row">
         <div class="mx-auto">
           <br />
-          <h1 class="">Общий рассказ про язык C#</h1>
-          <h3 class="">Приятного просмотра</h3>
+          <h1 class="rainbow-animated fw-light">Общий рассказ про язык C#</h1>
           <br />
           <br>
          <iframe src="https://onedrive.live.com/embed?cid=FF9A993A65938ACF&amp;resid=FF9A993A65938ACF%213767&amp;authkey=AHmrmVsm9ZT-HNg&amp;em=2&amp;wdAr=1.7777777777777777" width="1200px" height="600px" frameborder="0">Это внедренный файл <a target="_blank" href="https://office.com">Microsoft Office</a> на платформе <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
           </div>
-<br/>  
-<br/>  
-          <a href="https://vk.com/csharpblog7" target="blank">
-            <button class="btn btn-primary">Наш паблик в ВК</button>
-          </a>
         </div>
       </div>
     </div>
-    <br />
   </body>
 </html>

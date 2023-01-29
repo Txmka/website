@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="margin-right: calc(-1 * (100vw - 100%));">
   <head>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -20,33 +20,51 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
     <link rel="manifest" href="icon.png" />
     <style>
-      a {
-        color: rgb(255, 255, 255);
-      }
-      a:visited {
-        color: rgb(206, 47, 206);
-      }
-      a:hover {
-        color: rgb(206, 47, 206);
+      body {
+        background: white;
+        color: rgb(0, 0, 0);
       }
     </style>
     <style>
-      body {
-        background: linear-gradient(
-          to right,
-          rgb(153, 0, 240),
-          rgb(197, 97, 255)
-        );
-        color: rgb(255, 255, 255);
+      .rainbow-animated {
+        background: linear-gradient(to right, blue, violet, rgb(65, 1, 61));
+        background-size: 400% 400%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: rainbow 20s ease infinite;
+        animation: rainbow 20s ease infinite;
+        font-weight: 500;
+      }
+
+      @-webkit-keyframes rainbow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @keyframes rainbow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
       }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand p-0" href="index.html"
-          ><img src="csharplogo.png" alt="logotype" width="140"
-        /></a>
+      <div class="container-xxl" >
         <button
           class="navbar-toggler"
           type="button"
@@ -54,19 +72,16 @@
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+          aria-label="Toggle navigation">
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+		<a class="navbar-brand p-0" aria-current="page" href="index.html">
+			  <img src="csharplogo.png" alt="logotype" width="140" style="margin: 0px 0px 0px 45px; float: right;"/>
+			  </a>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="Lentavremeni.html"
-                ><h4>Лента времени</h4></a
-              >
+              <a class="nav-link" href="Lentavremeni.html">
+			    <h4>Лента времени</h4>
+			  </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Webalbum.html"><h4>Web-альбом</h4></a>
@@ -84,17 +99,28 @@
                 ><h4>Видео по установке С#</h4></a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://vk.com/csharpblog7"
+                ><h4>Наш паблик в ВК</h4></a
+              >
+            </li>
           </ul>
-        </div>
       </div>
+	<a> 
+	  <img src="qr.png" height=100 width=100 style="margin: 0px 20px 0px 0px; float: left;"
+		onmouseover = "height=660; width=660;"
+		onmouseout = "height=100; width=100;"/>
+	</a>
     </nav>
 
     <div class="container text-center">
       <div class="row">
         <div class="mx-auto">
           <br />
-          <h1 class="fw-light">Лента времени развития языка С#</h1>
-          <p class="lead fw-light">Приятного просмотра</p>
+          <h1 class="fw-light rainbow-animated">
+            Лента времени развития языка С#
+          </h1>
+          <br />
           <iframe
             src="https://onedrive.live.com/embed?cid=FF9A993A65938ACF&amp;resid=ff9a993a65938acf%213762&amp;authkey=AP_yh4xzxFjx_SQ&amp;em=2&amp;wdAr=1.3333333333333333"
             width="70%"
@@ -108,9 +134,6 @@
           >
           <br />
           <br />
-          <a href="https://vk.com/csharpblog7" target="blank">
-            <button class="btn btn-primary">Наш паблик в ВК</button>
-          </a>
         </div>
       </div>
     </div>
